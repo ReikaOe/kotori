@@ -10,21 +10,22 @@
     </head>
 
 <body>
-    <div id="message">ことりタイピング</div>
-    <div id="message2"></div>
-    
-    <a class="start-button" id="start-button" onClick="onStartButtonClick()">はじめる</a>
+    <div class="contents">
+        <div id="message">ことりタイピング</div>
+        <div id="message2"></div>
+            
+        <a class="start-button" id="start-button" onClick="onStartButtonClick()">はじめる</a>
 
-    <a id="retry-button" onClick="onStartButtonClick()">リトライする？</a>
+        <a id="retry-button" onClick="onStartButtonClick()">リトライする？</a>
 
-    <div id="subMsg"><kbd>スペース</kbd>キーでもスタートします</div>
+        <div id="subMsg"><kbd>スペース</kbd>キーでもスタートします</div>
 
-    <div id = "game">
-        <div id="word">&nbsp;</div>
-        <div id="typeword">&nbsp;</div>
-        <div id="type">&nbsp;</div>
+        <div id = "game">
+            <div id="word"></div>
+            <div id="typeword"></div>
+            <div id="type"></div>
+        </div>
     </div>
-
     <script type="text/javascript" src="./public/processing.js"></script>   
 </body>
 </html>

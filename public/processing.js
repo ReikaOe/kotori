@@ -81,6 +81,7 @@
     var wordChars;
     var charIndex;
     var messageArea;
+    var gameArea;
     var wordArea;
     var typewordArea;
     var typeArea;
@@ -91,12 +92,14 @@
         messageArea  = document.getElementById("message");
         msg2         = document.getElementById("message2");
         subMsg       = document.getElementById("subMsg");
+        gameArea     = document.getElementById("game");
         wordArea     = document.getElementById("word");
         typewordArea = document.getElementById("typeword");
         typeArea     = document.getElementById("type");
         startButton  = document.getElementById("start-button");
         retryButton  = document.getElementById("retry-button");
         retryButton.style.display = "none";
+        gameArea.style.display = "none";
     }
 
         function onStartButtonClick(){
@@ -132,7 +135,7 @@
             nextWord();
             countDown();
             timer1 = setInterval("countDown()", 1000);
-
+            gameArea.style.display = "block";
         }
 
         // 残り時間を計測
@@ -193,6 +196,7 @@
                 msg2.textContent = "彼らは遠目にこちらを見ている";
             }
 
+            gameArea.style.display = "none";
             wordArea.textContent = "";
             typewordArea.textContent = "";
             typeArea.textContent = "";
